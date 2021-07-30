@@ -28,7 +28,9 @@
   /* this makes all the children of the container go horizontal */
   .container {
     display: flex;
-    width: 90vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
   }
 
   /* setting the background images */
@@ -54,6 +56,7 @@
 
   /* this affects all the panels */
   .panel {
+    top: 10%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
