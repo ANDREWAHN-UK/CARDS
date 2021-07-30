@@ -11,10 +11,9 @@ panels.forEach(
     }
 )
 
-
 // this function removes the active class from a panel
 function removeActiveClasses() {
-    panels.forEach((panel) => {
+    panelsgit.forEach((panel) => {
         panel.classList.remove("active");
     })
 }
