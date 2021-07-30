@@ -1,10 +1,13 @@
   
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
 
+
+/* sets global styles */
 * {
   box-sizing: border-box;
 }
 
+/* sets the basic styles for the body */
 body {
   font-family: 'Muli', sans-serif;
   display: flex;
@@ -16,10 +19,12 @@ body {
   margin: 0;
 }
 
+/* this makes all the children of the container go horizontal */
 .container{
   display: flex;
 }
 
+/* setting the background images */
 .panel-1{
   background-image: url(../assets/images/image\ 1\ -\ explore\ the\ world.jpg);
 }
