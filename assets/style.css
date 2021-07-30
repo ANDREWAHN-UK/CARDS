@@ -87,7 +87,6 @@ body {
 }
 
 /* set what happens when a panel becomes 'active' */
-
 .panel.active{
   flex:5;
 }
