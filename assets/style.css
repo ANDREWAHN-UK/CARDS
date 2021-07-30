@@ -5,7 +5,13 @@
 /* sets global styles */
 * {
   box-sizing: border-box;
+  
 }
+
+/* changes default html font size so that each rem = 10px */
+HTML{
+  font-size: 62.5%;
+} 
 
 /* sets the basic styles for the body */
 body {
@@ -17,11 +23,13 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  
 }
 
 /* this makes all the children of the container go horizontal */
 .container{
   display: flex;
+  width: 90vw;
 }
 
 /* setting the background images */
@@ -43,4 +51,58 @@ body {
 
 .panel-5{
   background-image: url(../assets/images/image\ 5\ -\ mountain\ clouds.jpg);
+}
+
+/* this affects all the panels */
+.panel{
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 6rem;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 1rem;
+  /* position made relative so the h3 children position can be made absolute */
+  position: relative;
+  /* this is to make the transition smoother */
+  transition: flex 0.7s ease-in;
+}
+
+
+/* style the text in the panels */
+.panel h3{
+  font-size: 2.4rem;
+
+  /* position absolute to keep the text fixed in the panels */
+  position: absolute;
+  bottom: 20px;
+ left: 30%;
+ justify-content: center;
+  margin: 0;
+
+  /* opacity to zero means they are invisible until made active by the javascript */
+  opacity: 0;
+}
+
+/* set what happens when a panel becomes 'active' */
+
+.panel.active{
+  flex:5;
+}
+
+.panel.active h3{
+  opacity: 1;
+}
+
+
+@media (max-width: 480px){
+  .container{
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),.panel:nth-of-type(5){
+    display: none;
+  }
 }
