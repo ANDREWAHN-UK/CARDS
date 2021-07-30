@@ -15,3 +15,23 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.panel-1{
+  background-image: url(../assets/images/image\ 1\ -\ explore\ the\ world.jpg);
+}
+
+.panel-2{
+  background-image: url(../assets/images/image\ 2\ -\ wild\ forest.jpg);
+}
+
+.panel-3{
+  background-image: url(../assets/images/image\ 3\ -\ sunny\ beach.jpg);
+}
+
+.panel-4{
+  background-image: url(../assets/images/image\ 4\ -\ city\ in\ winter.jpg);
+}
+
+.panel-5{
+  background-image: url(../assets/images/image\ 5\ -\ mountain\ clouds.jpg);
+}
